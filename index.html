@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="img/counter.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Interaktivni brojač sa opcijama dodavanja, oduzimanja i pamćenja unosa."
+    />
+    <meta
+      name="keywords"
+      content="brojač, JavaScript, web aplikacija, jednostavan brojač"
+    />
+    <meta name="author" content="Filip Nikolić" />
+    <meta property="og:title" content="Brojač" />
+    <meta
+      property="og:description"
+      content="Jednostavan brojač sa funkcijama dodavanja, oduzimanja i pamćenja unosa."
+    />
+    <meta property="og:image" content="img/counter.png" />
+    <meta property="og:url" content="URL_stranice" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Brojač</title>
+  </head>
+  <body>
+    <section class="Main">
+      <div class="info">
+        <h1>Brojač</h1>
+        <hr />
+        <p id="brojac">0</p>
+      </div>
+      <div class="button">
+        <button onclick="dodaj()" title="Dodaj">Dodaj</button>
+        <button onclick="oduzmi()" title="Oduzmi">Oduzmi</button>
+        <button onclick="reset()" title="Reset">Reset</button>
+        <button onclick="zapamti()" title="Zapamti">Zapamti</button>
+      </div>
+      <p id="pamcen">Zapamćeni Unosi:<br /></p>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
