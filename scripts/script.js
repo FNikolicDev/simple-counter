@@ -8,8 +8,10 @@ function dodaj() {
 }
 
 function oduzmi() {
-  broj = broj - 1;
-  brojel.innerText = broj;
+  if (broj > 0) {
+    broj = broj - 1;
+    brojel.innerText = broj;
+  }
 }
 
 function reset() {
@@ -18,6 +20,8 @@ function reset() {
 }
 
 function zapamti() {
-  let brojpamcen = " " + broj + " /";
-  brojzapamceno.innerText += brojpamcen;
+  if (broj > 1) {
+    let brojpamcen = " " + broj + " /";
+    brojzapamceno.innerText += brojpamcen;
+  }
 }
